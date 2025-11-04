@@ -1,16 +1,46 @@
-# React + Vite
+# 💱 React Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+A modern and responsive web application built with **React** for real-time currency conversion. Users can select any two global currencies and get the current exchange rate and converted amount instantly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
 
-## React Compiler
+- **Real-Time Data:** Fetches up-to-date exchange rates from an external API (e.g., ExchangeRate-API).
+- **User-Friendly Interface:** Simple design for easy currency selection and input.
+- **Instant Calculation:** Converts the amount immediately as the user types or changes selections.
+- **Swap Functionality:** Dedicated button to quickly reverse the "From" and "To" currencies.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used 🛠️
 
-## Expanding the ESLint configuration
+- **Frontend:** React (with Hooks - `useState`, `useEffect`)
+- **Styling:** Tailwind CSS
+- **API Client:** Fetch API
+- **External Data:** (https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started 🚀
+
+### Prerequisites
+
+You must have **Node.js** and **npm** (or **yarn**) installed.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/shahrampk/Currency-Converter.git
+    ```
+2.  **Navigate to the project folder:**
+    ```bash
+    cd [PROJECT_FOLDER_NAME]
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+### Environment Variables
+
+Create a file named `.env` in the root directory and add your API key:
